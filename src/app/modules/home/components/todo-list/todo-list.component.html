@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="{'loading': !taskList.length}" >
     <ul *ngIf="taskList.length">
         <li *ngFor="let item of taskList; let i = index">
             <input type="checkbox" [(ngModel)]="item.checked">
