@@ -7,8 +7,6 @@ section{
   background: $secondary-background-color;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
 
-  margin-top: 20px;
-
   &.loading{
     background-image: url("../../../../../assets/img/bg-task.png");
     background-repeat: no-repeat;
