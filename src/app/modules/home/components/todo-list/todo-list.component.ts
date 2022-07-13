@@ -9,6 +9,7 @@ import { TaskList } from '../../model/task-list';
 export class TodoListComponent implements OnInit {
 
   public taskList: Array<TaskList> = [
+    {task: "Test", checked: true}
   ]
   constructor() { }
 
