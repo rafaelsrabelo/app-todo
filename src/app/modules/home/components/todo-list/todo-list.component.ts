@@ -18,10 +18,16 @@ export class TodoListComponent implements OnInit {
   }
 
   public deleteItemTaskList(event: number) {
-    this.taskList.splice(event, 1)
+    const confirm = window.confirm("Você tem certeza?")
+    if(confirm) {
+      this.taskList.splice(event, 1)
+    }
   }
 
   public deleteAllTaskList(){
-    this.taskList = [];
+    const confirm = window.confirm("Você tem certeza?")
+    if(confirm) {
+      this.taskList = [];
+    }
   }
 }
